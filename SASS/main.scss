@@ -1,0 +1,102 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background: black;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.project_container {
+  display: flex;
+  align-items: center;
+  position: relative;
+  // width: 100%;
+  height: 800px;
+  // background: url('../../car1.png');
+  // background: url("../../Frame\ 31.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  margin-top: 200px;
+  // display: flex;
+  // justify-content: space-between;
+  .left {
+    // border: 1px solid red;
+    padding: 50px;
+    position: relative;
+    z-index: 2;
+    background: url('../../car2.png') center center;
+    // background: url("../../Frame\ 31.svg");
+    width: 50%;
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition:  0.7s ease-in-out;
+    overflow: hidden;
+    span {
+      font-family: "Proxima Nova";
+      font-style: normal;
+      font-weight: 300;
+      font-size: 50px;
+      line-height: 61px;
+      color: #fff;
+      max-width: 500px;
+      transition: .3s ease-out;
+      opacity: 0;
+    }
+    p{
+      font-family: "Proxima Nova";
+      font-style: normal;
+      font-weight: 300;
+      font-size: 1.2rem;
+      color: #fff;
+      transition: .3s ease-out;
+      max-width: 500px;
+      opacity: 0;
+      
+    }
+    &:hover{
+      background:linear-gradient(to top left, rgba(2, 0, 36, 0.454) 0%, rgba(9, 9, 121, 0.231) 35%, rgba(0, 213, 255, 0.253) 100%), url('../../car2.png') center center;
+      background-repeat:no-repeat ;
+      background-size: cover;
+      // transition:  4s ease-in-out;
+      width: 100%;
+      height: 800px;
+      span, p{
+        transition: .3 ease-in;
+          // max-widt/h: 500px;
+          opacity: 1;
+      }
+
+    }
+  }
+  .right {
+    position: absolute;
+    top: 190px;
+    right: 0;
+    z-index: 1;
+    p {
+      font-family: "Poppins";
+      font-style: normal;
+      font-weight: 300;
+      font-size: 250px;
+      line-height: 300px;
+      color: #fff;
+    }
+    span {
+      font-family: "Proxima Nova";
+      font-style: normal;
+      font-weight: 300;
+      font-size: 50px;
+      line-height: 61px;
+      color: #fff;
+    }
+  }
+}
